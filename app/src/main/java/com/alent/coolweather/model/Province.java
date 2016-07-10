@@ -1,9 +1,11 @@
 package com.alent.coolweather.model;
 
+import org.litepal.crud.DataSupport;
+
 /**
  * Created by wyl on 2016/7/9.
  */
-public class Province {
+public class Province extends DataSupport{
 
     private int id;
     private String provinceName;
@@ -32,4 +34,5 @@ public class Province {
     public void setProvinceCode(String provinceCode) {
         ProvinceCode = provinceCode;
     }
+
 }

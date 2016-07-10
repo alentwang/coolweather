@@ -1,9 +1,11 @@
 package com.alent.coolweather.model;
 
+import org.litepal.crud.DataSupport;
+
 /**
  * Created by wyl on 2016/7/9.
  */
-public class County {
+public class County extends DataSupport{
 
     private int id;
     private String countyName;
@@ -41,4 +43,5 @@ public class County {
     public void setCityId(int cityId) {
         this.cityId = cityId;
     }
+
 }
